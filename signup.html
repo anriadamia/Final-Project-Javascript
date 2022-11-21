@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header></header>
+    <main>
+<section class="formcontainer">
+    <form action="" id="registration" method="POST" autocomplete="off">
+<div>
+    <input type="text" name="username" id="usernamefield" placeholder="Username...">
+    <span id="error_username" class="error-text"></span>
+    <span id="usernameError"></span>
+</div>
+<div class="emailvalidation">
+    <input type="email" name="myemail" id="email" placeholder="Email...">
+    <span id="text"></span>
+</div>
+<div>
+    <input type="password" name="pasww" id="passwordfield" placeholder="Password..."
+    >
+    <p class="passwordText">Show Password</p>
+    <i class="fa-solid fa-eye" id="toggleIcon"></i>
+    <span id="error_pasww" class="error-text"></span>
+</div>
+<div>
+    <input type="password" name="pasww2" id="passwordfield2" placeholder="Repeat Password...">
+    <span id="error_pasww2" 
+    class="error-text"></span>
+</div>
+<div>  
+    <label for="male">Male</label> 
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female" value="female">
+     <span id="error_gender" class="error-text"></span>
+</div>
+<div>
+    <label for="agree">I agree to <a href="#">terms</a>  and <a href="#"> conditions</a></label>
+<input type="checkbox" name="agree" id="agree">
+<span id="error_agree" class="error-text"></span>
+</div>
+<button type="submit">Submit</button>
+    </form>
+</section>
+<div class="goBack">
+    <p class="arrow">
+      <a href="index.html"><i class="fa-solid fa-arrow-left"></i> </a>  
+    </p>
+    </div>
+
+    </main>
+    <footer></footer>
+    <script src="https://kit.fontawesome.com/8dea7411bd.js" crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
+    <script src="https://kit.fontawesome.com/8dea7411bd.js" crossorigin="anonymous"></script>
+</body>
+</html>
