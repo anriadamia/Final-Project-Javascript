@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-sea-green.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -17,23 +25,117 @@
         </div>
       </div>
       <div class="textContainer flex">
-        <ul class="flex">
-          <li><a href="#">home</a></li>
-          <li><a href="#">project</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">blog</a></li>
-          <li><a href="#">shop</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
+        <nav>
+          <ul class="navigation flex" id="navigation">
+            <li><a href="#">home</a></li>
+            <li><a href="#">project</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">contact</a></li>
+            <li class="signUpText"><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </nav>
         <div class="signUp">
           <p>
             <a href="signup.html">Sign Up</a>
           </p>
         </div>
       </div>
+      <div class="burgerbar-container" id="burgerbar-container">
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line three"></div>
+      </div>
     </header>
-    <main></main>
+
+    <main>
+      <div class="interiorDesignWrapper flex">
+        <div class="interiorDesignText">
+          <p>MODERN INTERIOR</p>
+          <p>Create Your interior Design&#46;</p>
+          <p>
+            Welcome to the Decbas&#44;a dedicated online destination designed to
+            meet all your interior decorating needs&#44; whether big or
+            small&#46; Talk to us about restyling a room or designing a home
+            from the ground up&#46; Our team of experts will be glad to help you
+            with personalized styling solutions following you in all phases of
+            your project&#46;
+          </p>
+          <div class="contact">CONTACT</div>
+        </div>
+        <div class="interiorDesignPhotoContainer"></div>
+      </div>
+      <div class="ourServicesMainWrapper">
+        <div class="ourServicesText">
+            <p>WHAT WE DO</p>
+            <p>Our Services</p>
+        </div>
+        
+        <div class="ourServicesWraper flex">
+            <div class="serviceWraper flex">
+                <div class="interiorDesignPhoto"></div>
+                <p>Interior Design</p>
+            </div>
+            <div class="serviceWraper flex">
+                <div class="ArchitectureDesignPhoto"></div>
+                <p>Architecture</p>
+            </div>
+            <div class="serviceWraper flex">
+                <div class="PlanningDesignPhoto"></div>
+                <p>Planning</p>
+            </div>
+        </div>
+      </div>
+
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="img/img1.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/img2.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/img3.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/img4.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/img5.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/img6.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/img7.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/img8.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="img/img9.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide");
+        splide.mount();
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/8dea7411bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="burgerbar.js"></script>
   </body>
 </html>
