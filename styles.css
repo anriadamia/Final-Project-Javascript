@@ -14,6 +14,7 @@
 header {
   width: 100%;
   padding: 20px 100px;
+  margin-bottom:30px;
 }
 
 .logoContainer {
@@ -53,7 +54,9 @@ header {
 .arrow a {
   color: #000;
 }
-
+.textContainer ul a:hover{
+    color:#caa892;
+}
 .signUp {
   max-width: 100px;
   width: 100%;
@@ -135,7 +138,7 @@ header {
 }
 .navigation.navactive li {
   margin-top: 30px;
-  font-size: 30px;
+  font-size:1.8rem;
 }
 
 @media (max-width: 480px) {
@@ -182,43 +185,42 @@ header {
 }
 
 /* main სექცია კოდები */
-.interiorDesignWrapper {
+.interiorDesignWrapper,.secondInteriorDesignWrapper{
   width: 100%;
   height: 740px;
-  padding: 20px;
+  padding:20px;
   margin: 80px 0;
-  justify-content: space-around;
+  justify-content:space-evenly;
 }
-.interiorDesignText {
+.interiorDesignText,.secondInteriorDesignText {
   max-width: 600px;
   width: 100%;
-  width: 50%;
   height: 400px;
 }
 
-.interiorDesignText p:nth-child(1) {
-  font-size: 20px;
+.interiorDesignText p:nth-child(1),.secondInteriorDesignText p:nth-child(1)  {
+  font-size:1.25rem;
   color: #646464;
   margin-bottom: 12px;
 }
-.interiorDesignText p:nth-child(2) {
-  font-size: 72px;
+.interiorDesignText p:nth-child(2),.secondInteriorDesignText p:nth-child(2) {
+  font-size:4.5rem;
   color: #212121;
   margin-bottom: 20px;
 }
-.interiorDesignText p:nth-child(3) {
-  font-size: 18px;
+.interiorDesignText p:nth-child(3),.secondInteriorDesignText p:nth-child(3) {
+  font-size:1.1rem;
   color: #646464;
   margin-bottom: 30px;
 }
-.contact {
+.contact,.learnMore {
   width: 140px;
   height: 40px;
   background-color: #37806b;
   border-radius: 20px 0;
   text-align: center;
   color: #ffffff;
-  font-size: 18px;
+  font-size:1.1rem;
   padding: 10px;
   cursor: pointer;
 }
@@ -227,9 +229,8 @@ header {
   max-width: 720px;
   width: 100%;
   height: 600px;
+  border-radius:140px 0px;
   position: relative;
-  overflow: visible;
-  z-index: 999;
   background-image: url(./img/InteriorPhoto.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -240,16 +241,17 @@ header {
     padding-left:140px;
 }
 .ourServicesText p:nth-child(1){
-    font-size:20px;
+    font-size:1.2rem;
     color:#646464;
     margin-bottom:16px;
 }
 .ourServicesText p:nth-child(2){
-    font-size:48px;
+    font-size:3rem;
     color:#212121;
 }
 .ourServicesWraper{
     padding:30px;
+    margin-bottom:100px;
     justify-content:space-evenly;
 }
 .serviceWraper{
@@ -266,7 +268,7 @@ header {
     background-color:#CAA892;
 }
 .serviceWraper p{
-    font-size:24px;
+    font-size:1.5rem;
     
 }
 .interiorDesignPhoto{
@@ -291,6 +293,16 @@ header {
     background-position:cover;
 }
 
+.secondInteriorDesignPhotoContainer{
+    max-width: 720px;
+    width: 100%;
+    height: 600px;
+    border-radius:140px 0px;
+    position: relative;
+    background-image: url(./img/InteriorPhoto2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 
 
