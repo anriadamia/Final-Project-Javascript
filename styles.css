@@ -14,7 +14,7 @@
 header {
   width: 100%;
   padding: 20px 100px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .logoContainer {
@@ -35,7 +35,7 @@ header {
   width: 150px;
   height: 50px;
   display: block;
-  padding:10px 14px;
+  padding: 10px 14px;
 }
 
 .textContainer {
@@ -54,10 +54,10 @@ header {
 .textContainer ul a,
 .arrow a {
   color: #000;
-  padding:10px 14px;
+  padding: 10px 14px;
 }
-.textContainer ul a:hover{
-    color:#caa892;
+.textContainer ul a:hover {
+  color: #caa892;
 }
 .signUp {
   max-width: 100px;
@@ -80,8 +80,6 @@ header {
 .signUpText {
   display: none;
 }
-
-
 
 /* Burgerbar კოდები */
 .burgerbar-container {
@@ -140,10 +138,10 @@ header {
 }
 .navigation.navactive li {
   margin-top: 30px;
-  font-size:1.8rem;
+  font-size: 1.8rem;
 }
-main.disable{
-    display:none;
+main.disable {
+  display: none;
 }
 @media (max-width: 480px) {
   .logo h1 {
@@ -189,42 +187,48 @@ main.disable{
 }
 
 /* main სექცია კოდები */
-.interiorDesignWrapper,.secondInteriorDesignWrapper{
+.interiorDesignWrapper,
+.secondInteriorDesignWrapper {
   width: 100%;
   height: 740px;
-  padding:20px;
+  padding: 20px;
   margin: 80px 0;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
-.interiorDesignText,.secondInteriorDesignText {
+.interiorDesignText,
+.secondInteriorDesignText {
   max-width: 600px;
   width: 100%;
   height: 400px;
 }
 
-.interiorDesignText p:nth-child(1),.secondInteriorDesignText p:nth-child(1)  {
-  font-size:1.25rem;
+.interiorDesignText p:nth-child(1),
+.secondInteriorDesignText p:nth-child(1) {
+  font-size: 1.25rem;
   color: #646464;
   margin-bottom: 12px;
 }
-.interiorDesignText p:nth-child(2),.secondInteriorDesignText p:nth-child(2) {
-  font-size:4.5rem;
+.interiorDesignText p:nth-child(2),
+.secondInteriorDesignText p:nth-child(2) {
+  font-size: 4.5rem;
   color: #212121;
   margin-bottom: 20px;
 }
-.interiorDesignText p:nth-child(3),.secondInteriorDesignText p:nth-child(3) {
-  font-size:1.1rem;
+.interiorDesignText p:nth-child(3),
+.secondInteriorDesignText p:nth-child(3) {
+  font-size: 1.1rem;
   color: #646464;
   margin-bottom: 30px;
 }
-.contact,.learnMore {
+.contact,
+.learnMore {
   width: 140px;
   height: 40px;
   background-color: #37806b;
   border-radius: 20px 0;
   text-align: center;
   color: #ffffff;
-  font-size:1.1rem;
+  font-size: 1.1rem;
   padding: 10px;
   cursor: pointer;
 }
@@ -233,83 +237,136 @@ main.disable{
   max-width: 720px;
   width: 100%;
   height: 600px;
-  border-radius:140px 0px;
+  border-radius: 140px 0px;
   position: relative;
   background-image: url(./img/InteriorPhoto.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.ourServicesMainWrapper{
-    width:100%;
-    height:400px;
-    padding-left:140px;
+.ourServicesMainWrapper {
+  width: 100%;
+  height: 400px;
+  padding-left: 140px;
 }
-.ourServicesText p:nth-child(1){
-    font-size:1.2rem;
-    color:#646464;
-    margin-bottom:16px;
+.ourServicesText p:nth-child(1) {
+  font-size: 1.2rem;
+  color: #646464;
+  margin-bottom: 16px;
 }
-.ourServicesText p:nth-child(2){
-    font-size:3rem;
-    color:#212121;
+.ourServicesText p:nth-child(2) {
+  font-size: 3rem;
+  color: #212121;
 }
-.ourServicesWraper{
-    padding:30px;
-    margin-bottom:100px;
-    justify-content:space-evenly;
+.ourServicesWraper {
+  padding: 30px;
+  margin-bottom: 100px;
+  justify-content: space-evenly;
 }
-.serviceWraper{
-    max-width:300px;
-    width:100%;
-    height:150px;
-    border-radius:60px 0;
-    background-color:#f7f3f3;
-    padding:20px;
-    justify-content:space-evenly;
-}
-
-.serviceWraper:hover{
-    background-color:#CAA892;
-}
-.serviceWraper p{
-    font-size:1.5rem;
-    
-}
-.interiorDesignPhoto{
-    width:64px;
-    height:64px;
-    background-image:url(./img/interior-design.png);
-    background-repeat:no-repeat;
-    background-position:cover;
-}
-.ArchitectureDesignPhoto{
-    width:64px;
-    height:64px;
-    background-image:url(./img/Architecture.png);
-    background-repeat:no-repeat;
-    background-position:cover;
-}
-.PlanningDesignPhoto{
-    width:64px;
-    height:64px;
-    background-image:url(./img/Planning.png);
-    background-repeat:no-repeat;
-    background-position:cover;
+.serviceWraper {
+  max-width: 300px;
+  width: 100%;
+  height: 150px;
+  border-radius: 60px 0;
+  background-color: #f7f3f3;
+  padding: 20px;
+  justify-content: space-evenly;
 }
 
-.secondInteriorDesignPhotoContainer{
-    max-width: 720px;
-    width: 100%;
-    height: 600px;
-    border-radius:140px 0px;
-    position: relative;
-    background-image: url(./img/InteriorPhoto2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.serviceWraper:hover {
+  background-color: #caa892;
+}
+.serviceWraper p {
+  font-size: 1.5rem;
+}
+.interiorDesignPhoto {
+  width: 64px;
+  height: 64px;
+  background-image: url(./img/interior-design.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+.ArchitectureDesignPhoto {
+  width: 64px;
+  height: 64px;
+  background-image: url(./img/Architecture.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+.PlanningDesignPhoto {
+  width: 64px;
+  height: 64px;
+  background-image: url(./img/Planning.png);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.secondInteriorDesignPhotoContainer {
+  max-width: 720px;
+  width: 100%;
+  height: 600px;
+  border-radius: 140px 0px;
+  position: relative;
+  background-image: url(./img/InteriorPhoto2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clientReview {
+  width: 100%;
+}
+.clientReview p {
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  color: #212121;
+}
+
+.clientReviewWrapper{
+  width:100%;
+  /* justify-content:space-evenly; */
+}
 
 
+.clientReviewContainer{
+  max-width:630px;
+  width:100%;
+  height:230px;
+  background-color:#d2cbcb;
+  border-radius:70px 0px;
+  position:relative;
+  padding:30px;
+  margin:30px auto;
+}
+.clientReviewImage{
+  width:130px;
+  height:160px;
+ position:absolute;
+  bottom:50px;
+  left:-60px;
+}
 
+.clientReviewImage img{
+  width:100%;
+  border-radius:10px;
+}
+
+.clientReviewText{
+  width:70%;
+  margin-left:10%;
+}
+.clientReviewText p{
+  width:100%;
+  text-align:justify;
+  margin-bottom:10px;
+}
+
+.clientReviewText p:nth-child(1),.clientReviewText p:nth-child(2){
+  font-size:24px;
+  font-weight:bold;
+}
+.clientReviewText p:nth-child(3){
+  font-size:20px;
+}
 .splide__slide {
   width: 100%;
   height: 800px;
@@ -319,6 +376,7 @@ main.disable{
   height: 100%;
   object-fit: cover;
 }
+
 /* signup.html კოდები */
 .error-text {
   display: block;
