@@ -313,6 +313,7 @@ main.disable {
 
 .clientReview {
   width: 100%;
+  margin-top:70px;
 }
 .clientReview p {
   width: 100%;
@@ -500,6 +501,44 @@ main.disable {
   height: 100%;
   object-fit: cover;
 }
+
+footer{
+  padding:100px 200px;
+}
+
+.footerlogo{
+  width:150px;
+  height:50px;
+  background-image:url(./img/Logo.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.footerContainer{
+  width:180px;
+  height:250px;
+}
+
+.footerContainer h3{
+  font-size:28px;
+  margin-bottom:30px;
+}
+
+.footerContainer p{
+  font-size:18px;
+  margin-bottom:20px;
+  cursor:pointer;
+}
+
+.footerContainer p:hover{
+ color: #caa892;
+}
+.social p{
+  font-size:30px;
+}
+
+
+
 
 /* signup.html კოდები */
 .error-text {
