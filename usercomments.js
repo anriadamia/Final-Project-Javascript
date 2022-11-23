@@ -1,4 +1,4 @@
-let img=document.getElementById("img");
+   let clientImage=document.getElementById("clientReviewImage");
 let clientName=document.getElementById("clientName");
 let clientCountry=document.getElementById("clientCountry");
 
@@ -11,9 +11,11 @@ let answerText=this.responseText;
 let answerJs=JSON.parse(answerText);
 answerJs.results.forEach(element => {
     clientName.textContent=`${element.name.first} ${element.name.last}`
+    let img=document.createElement("img")
         img.src = element.picture.large;
         img.alt = "avatar of users";
     clientCountry.textContent=`${element.location.country}`
+    clientImage.appendChild(img)
 })
 loadMore.addEventListener("click",function(){
     clientReviewContainer.innerHTML=" "
