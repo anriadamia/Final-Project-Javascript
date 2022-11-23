@@ -17,11 +17,11 @@ if(password==""){
     errors.pasww="Password field can't be empty"
 }
 if(password!=password2){
-    errors.pasww2="Password don't match"
+    errors.pasww2="Passwords don't match"
 }
 let agree=document.getElementById("agree").checked;
 if(!agree){
-    errors.agree="You must agree terms and conditions"
+    errors.agree="You must agree to terms and conditions"
 }
 let gender=false;
 form.querySelectorAll('[name="gender"]').forEach(item=>{
@@ -51,8 +51,8 @@ form.submit()
 let errors={
 username:"Username field can't be empty",
 pasww:"Password field can't be empty",
-pasww2:"Password don't match",
-agree:"You must agree terms and conditions",
+pasww2:"Passwords don't match",
+agree:"You must agree to terms and conditions",
 gender:"Please select your gender"
 
 }
