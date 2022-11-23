@@ -17,10 +17,6 @@ answerJs.results.forEach(element => {
     clientCountry.textContent=`${element.location.country}`
     clientImage.appendChild(img)
 })
-loadMore.addEventListener("click",function(){
-    clientReviewContainer.innerHTML=" "
-    request();
-})
 })     
 
 
