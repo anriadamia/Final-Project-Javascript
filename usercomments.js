@@ -3,7 +3,7 @@ let clientName=document.getElementById("clientName");
 let clientCountry=document.getElementById("clientCountry");
 
 let request=new XMLHttpRequest();
-request.open("GET","https://randomuser.me/api/");
+request.open("GET","https://randomuser.me/api/?results=1");
 request.send()
 request.addEventListener("load",function(){
 
@@ -15,7 +15,7 @@ answerJs.results.forEach(element => {
         img.src = element.picture.large;
         img.alt = "avatar of users";
     clientCountry.textContent=`${element.location.country}`
-    clientImage.appendChild(img)
+    clientImage.appendChild(img) 
 })
 })     
 
