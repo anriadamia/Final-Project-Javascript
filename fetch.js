@@ -34,4 +34,4 @@ function filterData(searchItem){
 }
 
 
-filter.addEventListener("input",(element) =>filterData(element.target.value))
+filter.addEventListener("keyup",(element) =>filterData(element.target.value))

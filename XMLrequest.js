@@ -3,7 +3,7 @@ let clientName=document.getElementById("clientName");
 let clientCountry=document.getElementById("clientCountry");
 
 let request=new XMLHttpRequest();
-request.open("GET","https://randomuser.me/api/?results=1");
+request.open("GET","https://randomuser.me/api/");
 request.send()
 request.addEventListener("load",function(){
 

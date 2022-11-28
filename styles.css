@@ -325,11 +325,12 @@ main.disable, footer.disable {
   color:#000;
   font-size:14px;
   padding:10px 10px 8px;
-  width:100%;
+  width:20%;
 }
 
 .contentHeader input:focus{
   outline:none;
+  border:1px solid #caa892;
 }
 
 .contentTitle{
@@ -339,7 +340,11 @@ main.disable, footer.disable {
 .searchResults li{
   display:flex;
   padding:20px;
+  border-top:1px solid #caa892;
+  margin-top:10px;
+  cursor:pointer;
 }
+
 
 .searchResults img{
   border-radius:10px;
@@ -352,7 +357,9 @@ main.disable, footer.disable {
 font-size:24px;
 margin-left:10px;
 }
-
+.searchResults h4:hover, .teamMembers:hover{
+  color:#caa892;
+}
 .searchResults li.hide{
   display:none;
 }
