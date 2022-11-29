@@ -1,3 +1,4 @@
+"use strict"
 const accordion=document.querySelectorAll(".accordionContainer");
 
 

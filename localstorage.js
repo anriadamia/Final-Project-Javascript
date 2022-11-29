@@ -1,3 +1,4 @@
+"use strict"
 const cookieWrapper=document.querySelector(".cookie-wrapper");
 const cookieButton=document.querySelector(".cookiebtn")
 

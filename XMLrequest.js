@@ -1,4 +1,5 @@
-   let clientImage=document.getElementById("clientReviewImage");
+"use strict"
+let clientImage=document.getElementById("clientReviewImage");
 let clientName=document.getElementById("clientName");
 let clientCountry=document.getElementById("clientCountry");
 

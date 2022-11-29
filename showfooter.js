@@ -1,3 +1,4 @@
+"use strict"
 const footerContainer=document.querySelectorAll(".footerContainer");
 // const arrow=document.querySelectorAll(".fa-angle-down")
 

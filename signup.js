@@ -1,3 +1,4 @@
+"use strict"
 let form=document.getElementById("registration");
 
 form.addEventListener("submit", function(event){
@@ -91,7 +92,7 @@ usernameField.addEventListener("keyup",function(){
         usernameError.style.color="#AFE1AF";
     }else{
         usernameError.innerText="Username isn't valid";
-        usernameError.style.color="ff0000"
+        usernameError.style.color="#ff0000"
     }
     if(usernameField==""){
         usernameError.innerText=" "

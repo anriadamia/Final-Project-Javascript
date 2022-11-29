@@ -1,3 +1,4 @@
+"use strict"
 let toggleBurgerbar=document.getElementById("burgerbar-container");
 let navigationToggle=document.getElementById("navigation");
 let main=document.querySelector("main");
