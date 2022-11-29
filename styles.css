@@ -12,7 +12,6 @@
 }
 
 header {
-  /* width: 100%; */
   padding: 20px 40px;
   margin-bottom: 30px;
 }
@@ -41,7 +40,6 @@ header {
 .textContainer {
   width: 80%;
   height: 50px;
-  margin-left: 100px;
 }
 .textContainer nav {
   width: 80%;
@@ -56,10 +54,15 @@ header {
   color: #000;
   padding: 10px 14px;
 }
-.textContainer ul a:hover {
+.textContainer ul a:hover,
+.searchResults h4:hover,
+.teamMembers:hover,
+.accordionContent:hover,
+.mainAccordionContainer h2:hover,
+.footerContainer a:hover,
+.footerContainer p:hover {
   color: #caa892;
 }
-
 .signUp {
   max-width: 100px;
   width: 100%;
@@ -76,7 +79,8 @@ header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.signUpText {
+.signUpText,
+.footerContainer h3 i {
   display: none;
 }
 
@@ -147,8 +151,6 @@ footer.disable {
 /* main სექცია კოდები */
 .interiorDesignWrapper,
 .secondInteriorDesignWrapper {
-  /* width: 100%; */
-  /* height: 740px; */
   padding: 10px;
   margin: 80px 0;
   justify-content: space-evenly;
@@ -192,7 +194,8 @@ footer.disable {
   font-size: 1.2rem;
 }
 
-.interiorDesignPhotoContainer {
+.interiorDesignPhotoContainer,
+.secondInteriorDesignPhotoContainer {
   max-width: 720px;
   width: 100%;
   height: 600px;
@@ -202,8 +205,6 @@ footer.disable {
   background-size: cover;
 }
 .ourServicesMainWrapper {
-  /* width: 100%; */
-  /* height: 400px; */
   padding-left: 140px;
 }
 .ourServicesText p:nth-child(1) {
@@ -230,44 +231,36 @@ footer.disable {
   justify-content: space-evenly;
 }
 
-.serviceWraper:hover {
+.serviceWraper:hover,
+.clientReviewContainer:hover,
+.backtoTop:hover {
   background-color: #caa892;
 }
+
 .serviceWraper p {
   font-size: 1.5rem;
 }
-.interiorDesignPhoto {
-  width: 64px;
-  height: 64px;
-  background-image: url(./img/interior-design.png);
-  background-repeat: no-repeat;
-  background-position: cover;
-}
-.ArchitectureDesignPhoto {
-  width: 64px;
-  height: 64px;
-  background-image: url(./img/Architecture.png);
-  background-repeat: no-repeat;
-  background-position: cover;
-}
+.interiorDesignPhoto,
+.ArchitectureDesignPhoto,
 .PlanningDesignPhoto {
   width: 64px;
   height: 64px;
-  background-image: url(./img/Planning.png);
   background-repeat: no-repeat;
   background-position: cover;
 }
-
-.secondInteriorDesignPhotoContainer {
-  max-width: 720px;
-  width: 100%;
-  height: 600px;
-  border-radius: 140px 0px;
-  background-image: url(./img/InteriorPhoto2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.interiorDesignPhoto {
+  background-image: url(./img/interior-design.png);
+}
+.ArchitectureDesignPhoto {
+  background-image: url(./img/Architecture.png);
+}
+.PlanningDesignPhoto {
+  background-image: url(./img/Planning.png);
 }
 
+.secondInteriorDesignPhotoContainer {
+  background-image: url(./img/InteriorPhoto2.png);
+}
 
 .contentHeader {
   padding: 30px 30px;
@@ -304,7 +297,8 @@ footer.disable {
   border-radius: 10px;
 }
 
-.searchResults .members-info {
+.searchResults .members-info,
+.searchResults {
   margin-left: 10px;
 }
 .searchResults h4 {
@@ -319,26 +313,16 @@ footer.disable {
   display: none;
 }
 
-.searchResults {
-  margin-left: 10px;
-}
-
 .teamMembers,
 .clientReview {
-  /* width: 100%; */
   margin-top: 70px;
 }
 .teamMembers,
 .clientReview p {
-  /* width: 100%; */
   text-align: center;
   font-size: 48px;
   color: #212121;
 }
-
-/* .clientReviewWrapper {
-  width: 100%;
-} */
 
 .clientReviewContainer {
   max-width: 630px;
@@ -351,9 +335,6 @@ footer.disable {
   margin: 30px auto;
 }
 
-.clientReviewContainer:hover {
-  background-color: #caa892;
-}
 .clientReviewImage {
   width: 130px;
   height: 160px;
@@ -363,13 +344,12 @@ footer.disable {
 }
 
 .clientReviewImage img {
-  width: 100%;
   border-radius: 10px;
 }
 
 .clientReviewText {
   width: 70%;
-  margin-left:10%;
+  margin-left: 10%;
 }
 .clientReviewText p {
   width: 100%;
@@ -397,16 +377,13 @@ footer.disable {
   left: 20px;
   cursor: pointer;
 }
-.backtoTop:hover {
-  background-color: #caa892;
-}
+
 .backtoTop p {
   font-size: 28px;
   text-align: center;
 }
 
 .mainAccordionContainer {
-  /* max-width: 100%; */
   margin: 70px auto;
   font-family: Monospace;
 }
@@ -420,12 +397,8 @@ footer.disable {
   color: #212121;
 }
 .mainAccordionContainer h2:hover {
-  color: #caa892;
   border: 2px solid #caa892;
   border-radius: 10px;
-}
-.accordionContent:hover {
-  color: #caa892;
 }
 
 .accordionLabel {
@@ -448,18 +421,16 @@ footer.disable {
   display: none;
   font-size: 18px;
   color: #212121;
-  padding:0px 20px;
+  padding: 0px 20px;
 }
-.accordionContainer.active .accordionContent {
+.accordionContainer.active .accordionContent, .footerContainer.footeractive p {
   display: block;
 }
-
 .accordionContainer.active .accordionLabel::before {
   content: "-";
 }
 
 .signupWrapper {
-  width: 100%;
   margin: 30px auto;
 }
 .signupText h3,
@@ -576,9 +547,6 @@ footer {
   margin-bottom: 30px;
   cursor: pointer;
 }
-.footerContainer h3 i {
-  display: none;
-}
 
 .footerContainer p {
   font-size: 18px;
@@ -588,19 +556,14 @@ footer {
 .footerContainer a {
   color: #000;
 }
-.footerContainer a:hover,
-.footerContainer p:hover {
-  color: #caa892;
-}
+
 .social p {
   font-size: 30px;
 }
-.footerContainer.footeractive{
-  height:200px;
+.footerContainer.footeractive {
+  height: 200px;
 }
-.footerContainer.footeractive p{
-display:block;
-}
+
 
 /* signup.html კოდები */
 .error-text {
@@ -655,9 +618,6 @@ input[type="checkbox"] {
   font-size: 2rem;
 }
 
-.goBack:hover {
-  background-color: #afe1af;
-}
 
 @media (max-width: 1024px) {
   header {
@@ -675,7 +635,7 @@ input[type="checkbox"] {
   .interiorDesignWrapper {
     flex-direction: column-reverse;
   }
-  .secondInteriorDesignWrapper {
+  .secondInteriorDesignWrapper,  .ourServicesWraper, footer{
     flex-direction: column;
   }
   .interiorDesignPhotoContainer,
@@ -685,31 +645,25 @@ input[type="checkbox"] {
   .ourServicesText p {
     text-align: center;
   }
-  .ourServicesWraper {
-    flex-direction: column;
-  }
+
   .serviceWraper {
     margin-top: 30px;
     max-width: 500px;
     width: 100%;
   }
-  footer{
-    flex-direction:column;
+  .footerlogo {
+    margin-bottom: 40px;
   }
-  .footerlogo{
-    margin-bottom:40px;
+  .footerContainer {
+    height: 40px;
+    margin-bottom: 30px;
   }
-  .footerContainer{
- height:40px;
- margin-bottom:30px;
+  .footerContainer h3 i {
+    display: inline-block;
   }
-  .footerContainer h3 i{
-    display:inline-block;
+  .footerContainer p {
+    display: none;
   }
-  .footerContainer p{
-    display:none;
-  }
-
 }
 @media (max-width: 768px) {
   .logo h1 {
@@ -721,9 +675,9 @@ input[type="checkbox"] {
   .navigation {
     display: none;
   }
-.navigation li a{
-  font-size:28px;
-}
+  .navigation li a {
+    font-size: 28px;
+  }
   .textContainer {
     flex-direction: column;
   }
@@ -733,26 +687,26 @@ input[type="checkbox"] {
   .signUpText {
     display: block;
   }
-  .contentHeader input{
-    width:40%;
+  .contentHeader input {
+    width: 40%;
   }
-  .ourServicesMainWrapper{
-    margin-top:120px;
+  .ourServicesMainWrapper {
+    margin-top: 120px;
   }
-  .splide{
-    margin-top:200px;
+  .splide {
+    margin-top: 200px;
   }
-  .clientReviewContainer{
-    max-width:350px;
-    width:100%;
-    height:400px;
-   }
-   .clientReviewImage{
-left:-30px;
-bottom:90px;
-   }
-  .clientReviewText{
-    margin-left:80px;
+  .clientReviewContainer {
+    max-width: 350px;
+    width: 100%;
+    height: 400px;
+  }
+  .clientReviewImage {
+    left: -30px;
+    bottom: 90px;
+  }
+  .clientReviewText {
+    margin-left: 80px;
   }
 }
 
@@ -780,6 +734,6 @@ bottom:90px;
     padding: 0;
   }
   .accordionLabel::before {
-    right:0px;
+    right: 0px;
   }
 }
