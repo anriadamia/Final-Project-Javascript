@@ -783,4 +783,10 @@ input[type="checkbox"] {
   .accordionLabel::before {
     right: 0px;
   }
+.signupWrapper{
+  width:100%;
+}
+.signupText h3::before{
+  width:100%;
+}
 }
