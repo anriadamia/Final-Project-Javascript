@@ -67,7 +67,7 @@ header {
 .accordionContent:hover,
 .mainAccordionContainer h2:hover,
 .footerContainer a:hover,
-.footerContainer p:hover {
+.footerContainer ul:hover {
   color: #caa892;
 }
 .signUp {
@@ -459,7 +459,7 @@ footer.disable {
   padding: 0px 20px;
 }
 .accordionContainer.active .accordionContent,
-.footerContainer.footeractive p {
+.footerContainer.footeractive ul {
   display: block;
 }
 .accordionContainer.active .accordionLabel::before {
@@ -589,7 +589,7 @@ footer {
   cursor: pointer;
 }
 
-.footerContainer p {
+.footerContainer ul {
   font-size: 18px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -598,7 +598,7 @@ footer {
   color: #000;
 }
 
-.social p {
+.social ul {
   font-size: 30px;
 }
 .footerContainer.footeractive {
@@ -708,7 +708,7 @@ input[type="checkbox"] {
   .footerContainer h3 i {
     display: inline-block;
   }
-  .footerContainer p {
+  .footerContainer ul {
     display: none;
   }
 }
